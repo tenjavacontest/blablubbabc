@@ -31,7 +31,7 @@ public class Messages {
 
 	private void loadMessage(ConfigurationSection config, Message messageID, String defaultMessage) {
 		String message = config.getString(messageID.name(), defaultMessage);
-		messages.put(Message.NO_EDIT_PERMISSION, ChatColor.translateAlternateColorCodes('&', message));
+		messages.put(messageID, ChatColor.translateAlternateColorCodes('&', message));
 		// writ back (for default values):
 		config.set(messageID.name(), message);
 	}
