@@ -95,7 +95,9 @@ public class CommandBook {
 			return;
 		}
 
+		String playerName = executor.getName();
 		for (String command : commands) {
+			command = command.replace("{player}", playerName);
 			if (command.startsWith("@console")) {
 				if (command.length() >= 9) {
 					command = command.substring(9);
