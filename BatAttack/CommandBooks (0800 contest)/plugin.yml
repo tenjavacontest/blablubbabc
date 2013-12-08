@@ -1,9 +1,0 @@
-name: CommandBooks
-main: de.blablubbabc.commandbooks.Main
-version: 1.0
-author: blablubbabc
-description: Commands can be written into books and executed form there.
-permissions:
-  commandbooks.edit:
-    description: Allows the player to edit a CommandBook.
-    default: op
