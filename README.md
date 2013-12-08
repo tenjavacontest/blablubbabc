@@ -1,4 +1,4 @@
-BookCommand contains the submission for the UTS 0800 contest.
+BookCommand contains the submission for the UTC 0800 contest.
 This plugin simple executes commands, line by line, from (command-)books.
 Usage: an admin (or player with the 'commandbooks.edit' permission) can create "CommandBooks"
 by simply writing in the first line of a book "Command Book".
@@ -27,48 +27,89 @@ The plugins adds two simply abilities related to damaging bats, which get trigge
 Those wand can be given in-game via the command: /batwand <shoot|swarm>
 
 permissions:
+
   batmagic.swarm:
+  
     description: Allows the player to summon a swarm of aggressive bats with the swarm wand.
+    
     default: op
+    
   batmagic.shoot:
+  
     description: Allows the player to shoot damaging bats with the shoot wand.
+    
     default: op
+    
   batmagic.wand.swarm.create:
+  
     description: Allows the player to spawn in a swarm want.
+    
     default: op
+    
   batmagic.wand.shoot.create:
+  
     description: Allows the player to spawn in a shoot want.
+    
     default: op
     
 Default configuration:
 
 BAT_LIFETIME_TICKS: 400
+
 BAT_ATTACK_RANGE: 2.5
+
 BAT_ATTACK_DAMAGE: 3.0
+
 TARGET_PRIORITY_BOOST_PER_ATTACK: 50
+
 BAT_FLY_SPEED: 1.5
+
 SWARM_BAT_AMOUNT: 10
+
 SWARM_COOLDOWN_SECONDS: 100
+
 SWARM_WAND:
+
   ==: org.bukkit.inventory.ItemStack
+  
   type: BLAZE_ROD
+  
   meta:
+  
     ==: ItemMeta
+    
     meta-type: UNSPECIFIC
+    
     display-name: §6Bat Swarm Wand
+    
     lore:
+    
     - §3Summons a swarm
+    
     - §3of aggressive bats
+    
     - §3around you!
+    
 SHOOT_WAND:
+
   ==: org.bukkit.inventory.ItemStack
+  
   type: STICK
+  
   meta:
+  
     ==: ItemMeta
+    
     meta-type: UNSPECIFIC
+    
     display-name: §6Bat Shoot Wand
+    
     lore:
+    
     - §3Summons an aggressive
+    
     - §3bat, which flies
+    
     - §3in the direction
+    
     - §3you are looking!
