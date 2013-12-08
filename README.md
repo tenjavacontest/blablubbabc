@@ -1,4 +1,5 @@
 Bukkit version 1.6.4 R1/2
+
 BookCommand contains the submission for the UTC 0800 contest.
 This plugin simple executes commands, line by line, from (command-)books.
 Usage: an admin (or player with the 'commandbooks.edit' permission) can create "CommandBooks"
