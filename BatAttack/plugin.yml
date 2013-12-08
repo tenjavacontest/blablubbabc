@@ -1,0 +1,22 @@
+name: BatMagic
+main: de.blablubbabc.batmagic.Main
+version: 1.0
+author: blablubbabc
+description: Adds a few magic abilities related to attacking bats.
+commands:
+  batwand:
+    description: Gives the player one of the different magic wands.
+    usage: /<command> <swarm|shoot>
+permissions:
+  batmagic.swarm:
+    description: Allows the player to summon a swarm of aggressive bats with the swarm wand.
+    default: op
+  batmagic.shoot:
+    description: Allows the player to shoot damaging bats with the shoot wand.
+    default: op
+  batmagic.wand.swarm.create:
+    description: Allows the player to spawn in a swarm want.
+    default: op
+  batmagic.wand.shoot.create:
+    description: Allows the player to spawn in a shoot want.
+    default: op
